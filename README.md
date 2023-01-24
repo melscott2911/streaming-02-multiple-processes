@@ -1,5 +1,5 @@
-# streaming-02-multiple-processes
-
+# Mel Scott: streaming-02-multiple-processes
+d
 > Multiple processes accessing a shared resource concurrently
 
 ## Oveview
@@ -24,14 +24,14 @@ Executing multiple_processes.py script.
 Read the output. Read the code. 
 Try to figure out what's going on. 
 
-1. What libraries did we import?
-1. Where do we set the task_duration?
-1. How many functions are defined? 
-1. What are the function names? 
-1. In general, what does each function do? 
-1. Where does the execution begin?
-1. How many processes do we start?
-1. How many records does each process insert?
+1. What libraries did we import? sqlite3, time multiprocessing, osrt datetime, platform,sys
+1. Where do we set the task_duration? After task_duration =
+1. How many functions are defined? 7
+1. What are the function names? Create table, drop table, insert pet, process one, process two, process three and recreate database
+1. In general, what does each function do? These series of functions creates, drops, inserts within the database to process.
+1. Where does the execution begin? p1.start()
+1. How many processes do we start? 3
+1. How many records does each process insert? 12
 
 In this first run, we start 3 processes, 
 each inserting 2 records into a shared database 
